@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Игра в пары</h1>
+    <div class="info">
+      <div class="conditions">
+        <h2 class="conditions__title">Выберите количество карточек</h2>
+        <div class="conditions__main">
+          <button class="btn-left" id="l-btn">-</button>
+          <input class="initial-number" type="text" value="8" id="input" readonly>
+          <button class="btn-right" id="r-btn">+</button>
+          <button id="startingButton">Начать игру</button>
+        </div>
+      </div>
+      <div class="timer" id="timer"></div>
+    </div>
+    <div class="game-field-styles hidden" id="game"></div>
+    <div class="play-again hidden" id="play-again">PLAY AGAIN</div>
+  </div>
+
+
+  <script defer src="user-constructor.js"></script>
+  <!-- <script defer src="memo-game.js"></script> -->
+  <!-- <script defer src="starting-conditions.js"></script> -->
+</body>
+</html>

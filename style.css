@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'lato';
+  src: url('Lato-Bold.woff2') format('woff2');
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 15px;
+
+}
+
+body {
+  font-family: 'lato';
+}
+
+.container {
+  outline: 2px solid royalblue;
+  width: 60%;
+  height: 730px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.game-field-styles {
+  outline: 3px solid royalblue;
+  width: 550px;
+  /* height: 335px; */
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+}
+
+.time-is-up {
+  pointer-events: none;
+}
+
+.card {
+  border: 1px solid #555;
+  border-radius: 10px;
+  width: 88px;
+  height: 88px;
+  display: flex;
+  font-size: 41px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #000;
+  color: #000;
+  cursor: pointer;
+}
+
+.open {
+  background-color: #999;
+  color: #fff;
+  cursor: pointer;
+}
+
+.success {
+  background-color: aquamarine;
+  color: rgb(36, 51, 191);
+}
+
+.play-again {
+  width: 250px;
+  height: 75px;
+  border: 2px solid rgb(36, 51, 191);
+  background-color: aquamarine;
+  color:rgb(36, 51, 191);
+  cursor: pointer;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  width: 90px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(36, 51, 191);
+  color:rgb(36, 51, 191);
+  font-size: 22px;
+}
+
+.hidden {
+  display: none;
+}
+
+.conditions__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.initial-number {
+  width: 75px;
+  height: 55px;
+  box-sizing: border-box;
+  font-size: 41px;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.initial-number:focus {
+  border: 1px solid #000;
+}
+
+.btn-left,
+.btn-right {
+  width: 55px;
+  height: 55px;
+  font-size: 41px;
+  background-color: aquamarine;
+  border-color: rgb(36, 51, 191);
+}
